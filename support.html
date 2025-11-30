@@ -1,61 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Ottey Support</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-  :root{--bg:#0b1220;--card:#111a2b;--text:#e9eefc;--muted:#9fb0d0;--accent:#5cc6ff}
-  body{margin:0;background:var(--bg);color:var(--text);font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-  .wrap{max-width:760px;margin:40px auto;padding:0 20px}
-  .card{background:var(--card);border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-  h1{font-size:28px;margin:0 0 8px}
-  h2{font-size:20px;margin:28px 0 12px}
-  p,li{line-height:1.6;color:var(--muted)}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .footer{margin:32px 0;color:var(--muted);font-size:14px}
-  .chip{display:inline-block;background:#0f233d;border:1px solid #183357;color:#b7cae6;
-        padding:4px 10px;border-radius:999px;margin:2px 8px 2px 0;font-size:12px}
-</style>
+  <meta charset="UTF-8">
+  <title>Ottey AI – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Ottey AI. Restore purchases, manage subscriptions, and contact support.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Optional tiny helpers reusing your palette */
+    .chip{display:inline-block;background:#0f233d;border:1px solid rgba(148,163,184,.25);
+          color:#b7cae6;padding:4px 10px;border-radius:999px;margin:2px 8px 2px 0;font-size:12px}
+    .hint{font-size:12px;color:#9ca3af;margin-top:4px}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:12px; padding:2px 6px; border:1px solid rgba(148,163,184,.35); border-radius:6px; color:#e5e7eb}
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>Ottey Support</h1>
-      <p>If you need help with Ottey, email us at <a href="mailto:support@ottey.ai">support@ottey.ai</a>. We reply within 2 business days.</p>
+  <main class="legal-page">
+    <section class="legal-card">
+      <header class="legal-header">
+        <div class="legal-app-name">Ottey AI</div>
+        <h1>Support</h1>
+        <p class="legal-subtitle">Help with purchases, subscriptions, and general questions.</p>
+      </header>
 
       <h2>Quick answers</h2>
       <div>
-        <span class="chip">Restore</span><span class="chip">Subscription</span><span class="chip">Billing</span>
+        <span class="chip">Restore</span>
+        <span class="chip">Subscriptions</span>
+        <span class="chip">Billing</span>
+        <span class="chip">Privacy</span>
       </div>
+
       <h3>Restore Purchases</h3>
-      <p>Open Ottey → Settings → <strong>Restore Purchases</strong>. Make sure you’re signed into the same Apple ID used to buy Ottey+.</p>
+      <p>Open the app → <strong>Settings</strong> → <strong>Restore Purchases</strong>. Make sure you’re signed into the same Apple ID you used to subscribe.</p>
 
       <h3>Manage or Cancel Subscription</h3>
-      <p>On iPhone: Settings → your name → <strong>Subscriptions</strong> → Ottey.<br>
-         Or open <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>.</p>
+      <p>On iPhone: <span class="kbd">Settings → [your name] → Subscriptions → Ottey</span><br>
+         Or visit <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">apps.apple.com/account/subscriptions</a>.</p>
 
       <h3>Paid but still on Free</h3>
-      <p>Tap Settings → <strong>Restore Purchases</strong>. If it still shows Free, email us with your Apple receipt (no card info).</p>
+      <p>Tap <strong>Restore Purchases</strong> in Settings. If it still shows Free, email us with your Apple receipt (no card info).</p>
 
       <h3>Purchase won’t complete</h3>
       <ul>
         <li>Check App Store sign-in and payment method.</li>
-        <li>Reboot device and try again.</li>
-        <li>Email logs/time of attempt to <a href="mailto:support@ottey.ai">support@ottey.ai</a>.</li>
+        <li>Reboot the device and try again.</li>
+        <li>If you’re testing, ensure Sandbox is signed in (Developer settings).</li>
       </ul>
 
-      <h2>Privacy & Terms</h2>
-      <p>Privacy Policy: <a href="https://ottey.ai/privacy">ottey.ai/privacy</a><br>
-         Terms of Use: <a href="https://ottey.ai/terms">ottey.ai/terms</a></p>
-
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:support@ottey.ai">support@ottey.ai</a><br>
-         For bugs, include device model, iOS version, Ottey version (Settings → About), and screenshots if possible.</p>
+      <p>Email: <a href="mailto:support@ottey.ai">support@ottey.ai</a></p>
+      <p class="hint">Include device model, iOS version, app version (Settings → About), and screenshots if possible.</p>
 
-      <p class="footer">© 2025 Ottey AI. All rights reserved.</p>
-    </div>
-  </div>
+      <h2>Privacy & Terms</h2>
+      <p>
+        Privacy Policy: <a href="privacy.html">ottey.ai/privacy</a><br>
+        Terms of Use: <a href="terms.html">ottey.ai/terms</a>
+      </p>
+
+      <div class="legal-footer-note">© 2025 Ottey AI. All rights reserved.</div>
+    </section>
+  </main>
 </body>
 </html>
